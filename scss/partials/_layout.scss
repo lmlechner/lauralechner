@@ -25,7 +25,7 @@ nav {
 
   @include respond-to(medium-plus) {
     .menu {
-      flex: 3;
+      flex: 2;
     }
     .name {
       flex: 1;
@@ -39,11 +39,55 @@ nav {
       flex: row nowrap;
     }
 
+    li {
+      @include respond-to(medium-plus) {
+        padding: 0 2em;
+      }
+    }
   }
 
 }
 
+main.home-page .container {
+
+}
+
+// save for later
+// div.front-page-tile {
+//   width: 100%;
+//   background-image: url(../images/fortune_teller.png);
+//   background-size: contain;
+//   background-repeat: no-repeat;
+//   height: 0;
+//   padding-top: 56%; // 9/16 * 100
+
+//   div.tile-text {
+//     position: absolue;
+//     top: 0;
+//     height: 100%;
+//     width: 100%;
+//   }
+// }
+
 div.front-page-tile {
   width: 100%;
-  background-image: url(https://placekitten.com/300/200.jpg);
+}
+
+footer {
+  background-color: #080808;
+  color: #ffffff;
+
+  .container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+    .credit {
+
+    }
+
+    .social {
+
+    }
+  }
 }
