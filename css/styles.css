@@ -67,7 +67,8 @@ img {
 
 body {
   font-size: 18px;
-  line-height: 1.25em; }
+  line-height: 1.25em;
+  font-family: 'Pathway Gothic One', sans-serif; }
 
 h1 {
   font-size: 2em; }
@@ -76,7 +77,8 @@ nav.menu {
   font-size: 1.5em; }
 
 nav {
-  position: absolue; }
+  position: absolue;
+  padding: 1.5em 0; }
 
 @media screen and (min-width: 601px) {
   nav .container {
@@ -160,6 +162,3 @@ footer .container {
     -webkit-flex: 1;
         -ms-flex: 1;
             flex: 1; } }
-
-div {
-  border: 1px solid black; }

@@ -1,5 +1,6 @@
 nav {
   position: absolue;
+  padding: 1.5em 0;
 
   .container {
     @include respond-to(medium-plus) {
