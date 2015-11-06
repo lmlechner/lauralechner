@@ -91,3 +91,10 @@ footer {
     }
   }
 }
+
+///////// About Page /////////
+@include respond-to(medium-plus) {
+  .col-1, .col-2 {
+    flex: 1;
+  }
+}
