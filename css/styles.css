@@ -1,0 +1,128 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, button {
+  display: block; }
+
+body {
+  line-height: 1.25em; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+button {
+  background-color: transparent; }
+
+.container {
+  max-width: 980px;
+  margin: 0 14px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap; }
+
+@media screen and (min-width: 1041px) {
+  .container {
+    max-width: 980px;
+    margin: auto; } }
+
+main > .container {
+  margin: 0 22px; }
+
+@media screen and (min-width: 1041px) {
+  main > .container {
+    max-width: 980px;
+    margin: auto; } }
+
+img {
+  width: 100%; }
+
+nav {
+  position: absolue; }
+
+@media screen and (min-width: 601px) {
+  nav .container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap; } }
+
+nav .menu, nav .name {
+  width: 100%;
+  -webkit-box-flex: 0;
+  -webkit-flex: none;
+      -ms-flex: none;
+          flex: none; }
+
+@media screen and (max-width: 600px) {
+  nav .menu {
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2; }
+  nav .name {
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1; } }
+
+@media screen and (min-width: 601px) {
+  nav .menu {
+    -webkit-box-flex: 3;
+    -webkit-flex: 3;
+        -ms-flex: 3;
+            flex: 3; }
+  nav .name {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1; } }
+
+@media screen and (min-width: 601px) {
+  nav .menu ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: row;
+    -webkit-flex: row nowrap;
+        -ms-flex: row nowrap;
+            flex: row nowrap; } }
+
+div.front-page-tile {
+  width: 100%;
+  background-image: url(https://placekitten.com/300/200.jpg); }
+
+div {
+  border: 1px solid black; }

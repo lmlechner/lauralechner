@@ -1,0 +1,49 @@
+nav {
+  position: absolue;
+
+  .container {
+    @include respond-to(medium-plus) {
+      display: flex;
+      flex-flow: row wrap;
+    }
+  }
+
+  .menu, .name  {
+    width: 100%;
+    flex: none;
+  }
+
+  @include respond-to(small) {
+    .menu {
+      order: 2;
+    }
+
+    .name {
+      order: 1;
+    }
+  }
+
+  @include respond-to(medium-plus) {
+    .menu {
+      flex: 3;
+    }
+    .name {
+      flex: 1;
+    }
+  }
+
+  .menu ul {
+
+    @include respond-to(medium-plus) {
+      display: flex;
+      flex: row nowrap;
+    }
+
+  }
+
+}
+
+div.front-page-tile {
+  width: 100%;
+  background-image: url(https://placekitten.com/300/200.jpg);
+}
