@@ -166,3 +166,9 @@ footer .container {
     -webkit-flex: 1;
         -ms-flex: 1;
             flex: 1; } }
+
+main.about-page .col-1 {
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+  padding-right: 1em; }
