@@ -54,6 +54,16 @@ button {
     max-width: 980px;
     margin: auto; } }
 
+a {
+  text-decoration: none;
+  color: #000000; }
+
+a:hover {
+  color: gray; }
+
+main {
+  min-height: 86vh; }
+
 main > .container {
   margin: 0 22px; }
 
@@ -66,19 +76,22 @@ img {
   width: 100%; }
 
 body {
-  font-size: 18px;
+  font-size: 21px;
   line-height: 1.25em;
   font-family: 'Pathway Gothic One', sans-serif; }
 
 h1 {
-  font-size: 2em; }
+  font-size: 2.25em;
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic; }
 
-nav.menu {
-  font-size: 1.5em; }
+nav .menu {
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase; }
 
 nav {
-  position: absolue;
-  padding: 1.5em 0; }
+  padding: 1.5em 0;
+  width: 100%; }
 
 @media screen and (min-width: 601px) {
   nav .container {
@@ -86,12 +99,15 @@ nav {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-flex-flow: row wrap;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap; } }
+    -webkit-flex-flow: row nowrap;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; } }
 
 nav .menu, nav .name {
-  width: 100%;
   -webkit-box-flex: 0;
   -webkit-flex: none;
       -ms-flex: none;
@@ -110,18 +126,6 @@ nav .menu, nav .name {
             order: 1; } }
 
 @media screen and (min-width: 601px) {
-  nav .menu {
-    -webkit-box-flex: 2;
-    -webkit-flex: 2;
-        -ms-flex: 2;
-            flex: 2; }
-  nav .name {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1;
-        -ms-flex: 1;
-            flex: 1; } }
-
-@media screen and (min-width: 601px) {
   nav .menu ul {
     display: -webkit-box;
     display: -webkit-flex;
@@ -134,7 +138,7 @@ nav .menu, nav .name {
 
 @media screen and (min-width: 601px) {
   nav .menu ul li {
-    padding: 0 2em; } }
+    padding-right: 2em; } }
 
 div.front-page-tile {
   width: 100%; }

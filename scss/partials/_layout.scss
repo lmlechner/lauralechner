@@ -1,16 +1,18 @@
 nav {
-  position: absolue;
+  //position: fixed;
   padding: 1.5em 0;
+  width: 100%;
 
   .container {
     @include respond-to(medium-plus) {
       display: flex;
-      flex-flow: row wrap;
+      flex-flow: row nowrap;
+      justify-content: space-between;
     }
   }
 
   .menu, .name  {
-    width: 100%;
+    //width: 100%;
     flex: none;
   }
 
@@ -26,10 +28,10 @@ nav {
 
   @include respond-to(medium-plus) {
     .menu {
-      flex: 2;
+      //flex: 2;
     }
     .name {
-      flex: 1;
+      //flex: 1;
     }
   }
 
@@ -42,7 +44,7 @@ nav {
 
     li {
       @include respond-to(medium-plus) {
-        padding: 0 2em;
+        padding-right: 2em;
       }
     }
   }
