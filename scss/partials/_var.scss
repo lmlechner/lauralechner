@@ -9,7 +9,8 @@ $light-color: lighten($tag-color, 25%);
 $body-link-color: adjust-color($link-color, $hue: 70deg, $saturation: -20%, $lightness: -20%);
 
 // Media Queries
-$break-small: 600px;
+//$break-small: 600px;
+$break-small: 850px;
 $break-large: 850px;
 $break-xlarge: 1040px;
 

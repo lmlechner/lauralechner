@@ -13,6 +13,13 @@ h1 {
   font-style: italic;
 }
 
+h2 {
+  font-family: $display;
+  font-style: italic;
+  font-size: 1.25em;
+  line-height: 1.25em;
+}
+
 nav .menu {
   //font-size: 1.25em;
   font-family: $display;
