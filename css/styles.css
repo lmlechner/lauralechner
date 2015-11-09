@@ -82,12 +82,15 @@ img {
 body {
   font-size: 21px;
   line-height: 1.25em;
-  font-family: 'Pathway Gothic One', sans-serif; }
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300; }
 
 h1 {
-  font-size: 2.25em;
+  font-size: 1.5em;
   font-family: 'Open Sans', sans-serif;
-  font-style: italic; }
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 400; }
 
 h2 {
   font-family: 'Open Sans', sans-serif;
@@ -95,14 +98,24 @@ h2 {
   font-size: 1.25em;
   line-height: 1.25em; }
 
+main {
+  font-size: 18px;
+  letter-spacing: 0.75px; }
+
 nav .menu {
+  font-size: 0.8em;
   font-family: 'Open Sans', sans-serif;
   text-transform: uppercase; }
+
+footer .credit {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 400; }
 
 nav {
   padding: 1.5em 0 0 0;
   width: 100%;
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1), 0 -5px 3px -10px #fff; }
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1), 0 -5px 3px -10px #fff; }
 
 @media screen and (max-width: 850px) {
   nav {
@@ -132,7 +145,11 @@ nav .container {
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
-            justify-content: space-between; } }
+            justify-content: space-between;
+    -webkit-box-align: baseline;
+    -webkit-align-items: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline; } }
 
 nav .menu, nav .name {
   -webkit-box-flex: 0;
@@ -169,7 +186,8 @@ nav .menu ul li {
 
 @media screen and (min-width: 851px) {
   nav .menu ul li {
-    padding-right: 2em; } }
+    padding-right: 2em;
+    margin-bottom: 0; } }
 
 div.front-page-tile {
   width: 100%;
@@ -182,7 +200,8 @@ div.front-page-tile {
 footer {
   background-color: #080808;
   color: #ffffff;
-  padding: 0.5em 0; }
+  padding: 0.5em 0;
+  border-bottom: 2px solid #ffffff; }
 
 footer .container {
   display: -webkit-box;
