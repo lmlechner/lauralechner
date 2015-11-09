@@ -2,14 +2,14 @@ $display: 'Open Sans', sans-serif;
 $body: 'Pathway Gothic One', sans-serif;
 
 body {
-  font-size: 21px; // 18px
+  font-size: 18px; // 18px
   line-height: 1.25em;
   font-family: $display;
   font-weight: 300;
 }
 
 h1 {
-  font-size: 1.5em; //31.5px = 1.75em
+  font-size: 1.75em; //31.5px = 1.75em
   font-family: $display;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -21,6 +21,7 @@ h2 {
   font-style: italic;
   font-size: 1.25em;
   line-height: 1.25em;
+  padding-top: 0.6em;
 }
 
 main {
@@ -29,7 +30,7 @@ main {
 }
 
 nav .menu {
-  font-size: 0.8em; //16.8px = 0.93
+  font-size: 0.93em; //16.8px = 0.93
   font-family: $display;
   text-transform: uppercase;
 }
