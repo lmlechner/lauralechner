@@ -21,6 +21,7 @@ a {
 
 main {
   min-height: 80vh;
+  display: block;
   //margin-bottom: 23px;
 
   @include respond-to(medium-plus) {

@@ -62,7 +62,8 @@ a:hover {
   color: gray; }
 
 main {
-  min-height: 80vh; }
+  min-height: 80vh;
+  display: block; }
 
 @media screen and (min-width: 851px) {
   main {
