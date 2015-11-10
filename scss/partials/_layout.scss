@@ -17,9 +17,9 @@ nav {
 
   .container {
     flex-flow: column nowrap;
+    align-items: center;
 
     @include respond-to(medium-plus) {
-      display: flex;
       flex-flow: row nowrap;
       justify-content: space-between;
       align-items: baseline;
@@ -52,14 +52,23 @@ nav {
   }
 
   .menu ul {
-
-    @include respond-to(medium-plus) {
-      display: flex;
+    display: flex;
       flex: row nowrap;
-    }
+
+    // @include respond-to(medium-plus) {
+    //   display: flex;
+    //   flex: row nowrap;
+    // }
 
     li {
       margin-bottom: 0.5em;
+      @include respond-to(small) {
+        margin-right: 1em;
+
+        &:last-of-type {
+          margin-right: 0px;
+        }
+      }
 
       @include respond-to(medium-plus) {
         padding-right: 2em;

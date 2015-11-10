@@ -133,14 +133,14 @@ nav {
 nav .container {
   -webkit-flex-flow: column nowrap;
       -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap; }
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 @media screen and (min-width: 851px) {
   nav .container {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-flex-flow: row nowrap;
         -ms-flex-flow: row nowrap;
             flex-flow: row nowrap;
@@ -172,19 +172,24 @@ nav .menu, nav .name {
             order: 1;
     margin-bottom: 21px; } }
 
-@media screen and (min-width: 851px) {
-  nav .menu ul {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-flex: row;
-    -webkit-flex: row nowrap;
-        -ms-flex: row nowrap;
-            flex: row nowrap; } }
+nav .menu ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: row;
+  -webkit-flex: row nowrap;
+      -ms-flex: row nowrap;
+          flex: row nowrap; }
 
 nav .menu ul li {
   margin-bottom: 0.5em; }
+
+@media screen and (max-width: 850px) {
+  nav .menu ul li {
+    margin-right: 1em; }
+  nav .menu ul li:last-of-type {
+    margin-right: 0px; } }
 
 @media screen and (min-width: 851px) {
   nav .menu ul li {
