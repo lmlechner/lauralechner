@@ -114,6 +114,9 @@ footer .credit {
   letter-spacing: 3px;
   font-weight: 400; }
 
+.ital {
+  font-style: italic; }
+
 nav {
   padding: 1.5em 0 0 0;
   width: 100%;
