@@ -62,7 +62,7 @@ a:hover {
   color: gray; }
 
 main {
-  min-height: 80vh;
+  min-height: 81vh;
   display: block; }
 
 @media screen and (min-width: 851px) {
@@ -210,8 +210,7 @@ div.front-page-tile {
 footer {
   background-color: #080808;
   color: #ffffff;
-  padding: 0.5em 0;
-  border-bottom: 2px solid #ffffff; }
+  padding: 0.5em 0; }
 
 footer .container {
   display: -webkit-box;
