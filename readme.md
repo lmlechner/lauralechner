@@ -4,7 +4,7 @@ Each page has a `<main>` tag, and the content of each page is inside a container
 
 ## Images
 
-To ensure that images look on retina displays and load quickly, size them to be 1.5x the size of the widest space that they'll occupy on the page, and save them at relatively low quality, like '2' in Photoshop.  The styling will squish them down to the correct size.  Because the images are effectively scaled down, they'll still look good despite the low quality.  Aim to keep the file size of images in the low 100's of Kb.
+To ensure that images look good on retina displays and load quickly, size them to be 1.5x the size of the widest space that they'll occupy on the page, and save them at relatively low quality, like '2' in Photoshop.  The styling will squish them down to the correct size.  Because the images are effectively scaled down, they'll still look good despite the low quality.  Aim to keep the file size of images in the low 100's of Kb.
 
 ## Home page
 
