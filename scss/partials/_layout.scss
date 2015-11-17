@@ -154,18 +154,21 @@ footer {
   }
 }
 
+.col-1 {
+
+  @include respond-to(medium-plus) {
+    margin-right: 2em;
+  }
+}
+
 
 main.about-page {
   .col-1 {
     align-self: center;
-
-    @include respond-to(medium-plus) {
-      margin-right: 2em;
-    }
   }
 }
 
-///////// About Page /////////
+///////// Work Page /////////
 main.work-page .container{
   display: block;
 }
