@@ -1,0 +1,6 @@
+baseurl = "http://awesome.com/"
+languageCode = "en-us"
+title = "Test Hugo site"
+theme = "lml"
+SectionPagesMenu = "main"
+
