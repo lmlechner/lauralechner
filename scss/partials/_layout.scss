@@ -1,15 +1,33 @@
 nav {
-  position: absolue;
+  //position: fixed;
+  padding: 1.5em 0 0 0;
+  width: 100%;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.1),0 -5px 3px -10px #fff;
+
+  @include respond-to(small) {
+    margin-bottom: 21px;
+  }
+
+  @include respond-to(medium-plus) {
+    position: fixed;
+    padding: 1.5em 0;
+    background-color: #ffffff;
+    z-index: 1000;
+  }
 
   .container {
+    flex-flow: column nowrap;
+    align-items: center;
+
     @include respond-to(medium-plus) {
-      display: flex;
-      flex-flow: row wrap;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: baseline;
     }
   }
 
   .menu, .name  {
-    width: 100%;
+    //width: 100%;
     flex: none;
   }
 
@@ -20,28 +38,41 @@ nav {
 
     .name {
       order: 1;
+      margin-bottom: 21px;
     }
   }
 
   @include respond-to(medium-plus) {
     .menu {
-      flex: 2;
+      //flex: 2;
     }
     .name {
-      flex: 1;
+      //flex: 1;
     }
   }
 
   .menu ul {
-
-    @include respond-to(medium-plus) {
-      display: flex;
+    display: flex;
       flex: row nowrap;
-    }
+
+    // @include respond-to(medium-plus) {
+    //   display: flex;
+    //   flex: row nowrap;
+    // }
 
     li {
+      margin-bottom: 0.5em;
+      @include respond-to(small) {
+        margin-right: 1em;
+
+        &:last-of-type {
+          margin-right: 0px;
+        }
+      }
+
       @include respond-to(medium-plus) {
-        padding: 0 2em;
+        padding-right: 2em;
+        margin-bottom: 0;
       }
     }
   }
@@ -71,11 +102,17 @@ main.home-page .container {
 
 div.front-page-tile {
   width: 100%;
+  margin-bottom: 0.5em;
+
+  @include respond-to(medium-plus) {
+    margin-bottom: 1em;
+  }
 }
 
 footer {
   background-color: #080808;
   color: #ffffff;
+  padding: 0.5em 0;
 
   .container {
     display: flex;
@@ -87,7 +124,72 @@ footer {
     }
 
     .social {
+      font-size: 1.25em;
 
+      @include respond-to(medium-plus) {
+        font-size: 1em;
+      }
+
+      a {
+        text-decoration: none;
+        color: #ffffff;
+
+        &:hover {
+          color: darken(#ffffff, 25%);
+        }
+      }
+      > * {
+        margin-left: 0.5em;
+      }
     }
   }
 }
+
+///////// About Page /////////
+.col-1, .col-2 {
+  margin-bottom: 1em;
+
+  @include respond-to(medium-plus) {
+    flex: 1;
+  }
+}
+
+.col-1 {
+
+  @include respond-to(medium-plus) {
+    margin-right: 2em;
+  }
+}
+
+
+main.about-page {
+  .col-1 {
+    align-self: center;
+  }
+}
+
+///////// Work Page /////////
+main.work-page .container{
+  display: block;
+}
+
+.work-container {
+  margin-bottom: 2em;
+
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+  }
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+

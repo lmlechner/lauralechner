@@ -9,6 +9,26 @@
     margin: auto;
   }
 }
+
+a {
+  text-decoration: none;
+  color: #000000;
+
+  &:hover {
+    color: lighten(#000000, 50%);
+  }
+}
+
+main {
+  min-height: 81vh;
+  display: block;
+  //margin-bottom: 23px;
+
+  @include respond-to(medium-plus) {
+    padding-top: 118px;
+  }
+}
+
 main > .container {
    margin: 0 $page-margin;
   @include respond-to(super-wide){

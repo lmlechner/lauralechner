@@ -1,12 +1,46 @@
+$display: 'Open Sans', sans-serif;
+$body: 'Pathway Gothic One', sans-serif;
+
 body {
-  font-size: 18px;
+  font-size: 18px; // 18px
   line-height: 1.25em;
+  font-family: $display;
+  font-weight: 300;
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 1.75em; //31.5px = 1.75em
+  font-family: $display;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 400;
 }
 
-nav.menu {
-  font-size: 1.5em;
+h2 {
+  font-family: $display;
+  font-style: italic;
+  font-size: 1.25em;
+  line-height: 1.25em;
+  padding-top: 0.6em;
+}
+
+main {
+  font-size: 18px;
+  letter-spacing: 0.75px;
+}
+
+nav .menu {
+  font-size: 0.93em; //16.8px = 0.93
+  font-family: $display;
+  text-transform: uppercase;
+}
+
+footer .credit {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 400;
+}
+
+.ital {
+  font-style: italic;
 }
