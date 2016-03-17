@@ -281,3 +281,8 @@ main.work-page .container {
   left: 0;
   width: 100%;
   height: 100%; }
+
+.basic-page h1 {
+  margin: 0 auto;
+  padding-bottom: 1em;
+  text-transform: capitalize; }
