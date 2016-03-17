@@ -104,6 +104,10 @@ main {
   font-size: 18px;
   letter-spacing: 0.75px; }
 
+main a {
+  color: #5DB167;
+  text-decoration: underline; }
+
 nav .menu {
   font-size: 0.93em;
   font-family: 'Open Sans', sans-serif;
