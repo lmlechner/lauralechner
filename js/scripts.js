@@ -5,7 +5,7 @@ $(document).ready(function() {
   $("#contact-form").validate({
     submitHandler: function(form) {
       $.ajax({
-        url: "//formspree.io/laura@lauralechner.com",
+        url: "//formspree.io/lmlechner@gmail.com",
         method: "POST",
         data: {
           name: $(form).find("input[name='name']").val(),
