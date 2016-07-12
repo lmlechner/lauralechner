@@ -1,0 +1,26 @@
+// This parial is for handling images within the text.
+// Image handling as part of the layout is in _layout
+
+.img-right {
+
+  @include respond-to(medium-plus){
+    width: 50%;
+    float: right;
+    margin: 0 0 1em 1em;
+  }
+}
+
+.img-left {
+  @include respond-to(medium-plus){
+    width: 50%;
+    float: left;
+    margin: 0 1em 1em 0;
+  }
+}
+
+.img-center {
+  @include respond-to(medium-plus){
+    width: 50%;
+    margin: 0 auto;
+  }
+}

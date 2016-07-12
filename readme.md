@@ -6,6 +6,31 @@ Each page has a `<main>` tag, and the content of each page is inside a container
 
 To ensure that images look good on retina displays and load quickly, size them to be 1.5x the size of the widest space that they'll occupy on the page, and save them at relatively low quality, like '2' in Photoshop.  The styling will squish them down to the correct size.  Because the images are effectively scaled down, they'll still look good despite the low quality.  Aim to keep the file size of images in the low 100's of Kb.
 
+### Image Handling
+
+Images can also be wrapped in a div with a helper class to manage thier layout in a body of text.
+
+Above the mobile breakpoint the following will size an image to 50% the size of the column and float it left:
+```
+<div class="img-left">
+  <img src="./images/some_image.jpg" alt="">
+</div>
+```
+
+Above the mobile breakpoint the following will size an image to 50% the size of the column and float it right:
+```
+<div class="img-right">
+  <img src="./images/some_image.jpg" alt="">
+</div>
+```
+
+Above the mobile breakpoint the following will size an image to 50% the size of the column and center it.  Text will not flow around this div like it would with the others
+```
+<div class="img-center">
+  <img src="./images/some_image.jpg" alt="">
+</div>
+```
+
 ## Home page
 
 To add a tile to the homepage, first save an image to the image directory.  The tiles on the home page are wrapped in divs, like this:

@@ -332,3 +332,20 @@ main.contact-page > .container form input[type=submit] {
 
 main.contact-page > .container form input[type=submit]:hover {
   cursor: pointer; }
+
+@media screen and (min-width: 851px) {
+  .img-right {
+    width: 50%;
+    float: right;
+    margin: 0 0 1em 1em; } }
+
+@media screen and (min-width: 851px) {
+  .img-left {
+    width: 50%;
+    float: left;
+    margin: 0 1em 1em 0; } }
+
+@media screen and (min-width: 851px) {
+  .img-center {
+    width: 50%;
+    margin: 0 auto; } }
