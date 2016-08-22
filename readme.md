@@ -81,7 +81,7 @@ To add new items to the nav, add in new `<li>` elements in this section:
 <div class="menu">
   <ul>
     <li><a href="about.html">About</a></li>
-    <li><a href="work.html">Work</a></li>
+    <li><a href="work.html">Film/Video Work</a></li>
   </ul>
 </div> <!-- end of menu -->
 <div class="name">
